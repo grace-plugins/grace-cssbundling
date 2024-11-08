@@ -1,7 +1,10 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
+plugins {
+    id "eclipse"
+    id "idea"
+    id "groovy"
+    id "org.graceframework.grace-plugin"
+    id "maven-publish"
+    id "signing"
 }
 
 ext."signing.keyId" = project.hasProperty("signing.keyId") ? project.getProperty('signing.keyId') : System.getenv('SIGNING_KEY')
@@ -11,13 +14,6 @@ ext.isReleaseVersion = !projectVersion.endsWith("SNAPSHOT")
 
 version projectVersion
 group "org.graceframework.plugins"
-
-apply plugin: "eclipse"
-apply plugin: "idea"
-apply plugin: "groovy"
-apply plugin: "org.graceframework.grace-plugin"
-apply plugin: "maven-publish"
-apply plugin: "signing"
 
 repositories {
     mavenCentral()
