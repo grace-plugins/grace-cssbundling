@@ -33,7 +33,7 @@ jobs:
         id: build
         uses: gradle/actions/setup-gradle@v3
         with:
-          arguments: build -x test
+          arguments: build -x findMainClass
   publish:
     if: github.event_name == 'push'
     needs: ["build"]
@@ -69,4 +69,4 @@ jobs:
           SIGNING_PASSPHRASE: ${{ secrets.SIGNING_PASSPHRASE }}
           SECRING_FILE: ${{ secrets.SECRING_FILE }}
         with:
-          arguments: -Psigning.secretKeyRingFile=${{ github.workspace }}/secring.gpg :plugin:publishToSonatype closeAndReleaseSonatypeStagingRepository
+          arguments: -Psigning.secretKeyRingFile=${{ github.workspace }}/secring.gpg publishToSonatype closeAndReleaseSonatypeStagingRepository
