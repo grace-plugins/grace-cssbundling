@@ -1,5 +1,0 @@
----
-grails:
-    profile: plugin
-    codegen:
-        defaultPackage: grace.demos
