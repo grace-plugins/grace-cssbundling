@@ -1,0 +1,34 @@
+== What's New
+
+=== 0.1.0
+
+View on GitHub: link:{github}/releases/tag/v0.1.0[v0.1.0]
+
+* Update docs
+* Update GitHub workflows - Remove integrationTest in build
+* Upgrade to Gradle 7.6.6 
+* Update Gradle build scripts 
+* Update GitHub workflows 
+* Update README - Add document links
+  - Add badge
+* Upgrade to Gradle 7.6.5 
+* Fixed FOLDER: build/docs 
+* Update github workflows - Generate and deploy the release version of docs
+* Update github workflows - Upgrade to setup-gradle@v4
+* Setup Grace docs workflow 
+* Add Gradle docs task 
+* Add docs for plugin 
+* Downgrade to Gradle 7.6.4 Grace docs tasks still use groovy.util.AntBuilder
+* Reorganize the project directory structure - Move to plugin's own directory
+  - Add demo app
+  - Update github workflows
+* Add license 
+* Update github workflows 
+* Refactor to new directory structure 
+* Downgrade to Gradle Nexus Publish Plugin 1.3.0 
+* Update build scripts 
+* Update build scripts 
+* Update README 
+* Update build scripts 
+* Setup github workflows 
+* Initial commit 
