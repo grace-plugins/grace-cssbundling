@@ -10,3 +10,10 @@ dependencies {
     implementation "org.graceframework.plugins:cssbundling:{version}"
 }
 ----
+
+Then, executing the following command, it will copy the Bootstrap css and javascripts to the `app/assets`,
+
+[source,console]
+----
+$ grace css:install bootstrap
+----
