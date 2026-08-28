@@ -18,7 +18,7 @@ Bundle and process CSS in Grace with Tailwind, PostCSS, and Sass via Node.js.
 
 ## Ducumentation
 
-* [0.1.x](https://plugins.graceframework.org/grace-cssbundling/0.1.x/)
+* [latest](https://plugins.graceframework.org/grace-cssbundling/latest/)
 
 ## Usage
 
@@ -29,17 +29,17 @@ Add `cssbundling` plugin to `build.gradle`,
 ```gradle
 repositories {
     mavenCentral()
-    maven {
-        url "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-        mavenContent {
-            snapshotsOnly()
-        }
-    }
 }
 
 dependencies {
-    implementation "org.graceframework.plugins:cssbundling:0.1.0-SNAPSHOT"
+    implementation "org.graceframework.plugins:cssbundling:VERSION"
 }
+```
+
+### Install Bootstrap
+
+```
+$ grace css:install bootstrap
 ```
 
 ## Development
@@ -52,13 +52,9 @@ cd grace-cssbundling
 ./gradlew publishToMavenLocal
 ```
 
-## What's New
+## Release notes
 
-### 0.1.0-SNAPSHOT
-
-* Upgrade to Grace 2023.0.3
-* Upgrade to Groovy 4.0.23
-
+- [Release notes](https://plugins.graceframework.org/grace-cssbundling/latest/guide/changelog.html)
 
 ## Links
 
